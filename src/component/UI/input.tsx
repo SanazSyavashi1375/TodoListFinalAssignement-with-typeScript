@@ -1,10 +1,10 @@
 import React from 'react'
-import '../../assets/css/input.css'
+// import '../../assets/css/input.css'
 import Label from './label'
 
 const Input:React.FC<{type:any,id:string,value:any , onChange:any,label:string}> = props => {
     return (
-         <div className = "input" >
+         <div className = "inputKeeper" >
         <Label id = { props.id }
         label = { props.label }
         /> <input 
@@ -12,7 +12,9 @@ const Input:React.FC<{type:any,id:string,value:any , onChange:any,label:string}>
         id={props.id}
         value={props.value}
         onChange={props.onChange}
+        className="input"
         required/>
+      
         </div>
     )
 }

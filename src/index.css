@@ -1,13 +1,45 @@
+@tailwind base;
+@tailwind components;
+.rowOfTable {
+    @apply flex flex-row text-center justify-center box-border w-full border-solid border-2 border-gray-400 h-16 text-black;
+}
+
+.commonCel {
+    @apply m-0 p-4 w-2/12 box-border w-full border-solid border-2 border-gray-400
+}
+
+.numCel {
+    @apply m-0 p-5 w-1/12 box-border w-full border-solid border-2 border-gray-400
+}
+
+.descriptionCel {
+    @apply m-0 p-5 w-3/6 box-border w-full border-solid border-2 border-gray-400
+}
+
+.input {
+    @apply w-full border-solid border-2 border-gray-400 rounded-md
+}
+
+.inputKeeper {
+    @apply flex flex-col items-start mb-2 text-right justify-center content-center w-5/12;
+}
+
+.textAreaKeeper {
+    @apply flex flex-col items-start mb-2 text-right justify-start content-center w-full mt-5;
+}
+
+.textArea {
+    @apply w-full h-24 border-solid border-2 border-gray-400 rounded-md pl-5;
+}
+
+@tailwind utilities;
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }

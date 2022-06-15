@@ -10,7 +10,7 @@ const ModalOverlay:React.FC<{children:React.ReactNode}> = (props) => {
         <div className = "content" > { props.children } </div> </div >
     )
 }
-const ErrorModule:React.FC<{onClose:()=>void,error:string}> = (props) => {
+const ErrorModule:React.FC<{onClose:any,error:string}> = (props) => {
         const portal:HTMLElement|Element | DocumentFragment|null|any = document.getElementById('error')
         return ( <Fragment> {
                     ReactDOM.createPortal( <BackDrop onClick = { props.onClose }/> ,portal) } {
